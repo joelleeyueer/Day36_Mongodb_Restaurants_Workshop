@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Of Restaurants</title>
+    <h1>List Of Restaurants</h1>
+    <tr th:each="currentRestaurant : ${restaurants}">
+        <td><span th:text="${restaurants}"></span></td>
+    </tr>
+    <ul>
+        <li data-th-each="r: ${restaurants}">
+            <h3 data-th-text="*{restaurants}"></h3>
+        </li>
+    </ul>
+</head>
+<body>
+    
+</body>
+</html>

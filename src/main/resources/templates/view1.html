@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type Of Food</title>
+    <h1>Select your favourite type of food</h1>
+
+    <ul>
+        <li th:each="currentFood : ${typeoffood}">
+            <a data-th-href="@{/{foodtype}/restaurants(foodtype=${currentFood})}">
+            <code data-th-text="${currentFood}"></code>
+            </a>
+        </li>
+    </ul>
+
+</head>
+<body>
+    
+</body>
+</html>
